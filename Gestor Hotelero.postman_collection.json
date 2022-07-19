@@ -1,0 +1,1859 @@
+{
+	"info": {
+		"_postman_id": "22c41aa6-2f3b-4d95-b1e1-ed757a72d098",
+		"name": "Gestor Hotelero",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19251862"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "DanielE",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Daniel",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "12345678",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "dperez@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "SuperAdmin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUser",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzE1NjAxMiwiZXhwIjoxNjU3MjQyNDEyfQ.X4XAxAVz0pN_5ume7Ag4BgbBGdfXFhT4vrmazkfuEtU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/user/getUser/62a80fa19bca504f58d380d5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"getUser",
+								"62a80fa19bca504f58d380d5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmMxYzBkYWVhNWYwZjUwYTdjMGMzZjkiLCJ1c2VybmFtZSI6IlN1cGVyQWRtaW4iLCJwYXNzd29yZCI6IiQyYSQxMCRqUEpWang4a2lRMnYwR2N3VkpNU2MuZW5OY1c2Ymhkbzdnekk3TlE0dURZSTRzNzlXQk03NiIsIm5hbWUiOiJEYW5pZWwgUMOpcmV6IiwiZW1haWwiOiJkYW5pZWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjU3MDc1MTYzLCJleHAiOjE2NTcxNjE1NjN9.C6AKnImfX3eQp5XOOqH-tUZXQN4ueDQmpUSWK9SNNLk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "SuperAdmin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "role",
+									"value": "asdf",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "Estuardo",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "78945612",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "daniel@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/update/62c1c0daea5f0f50a7c0c3f9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"update",
+								"62c1c0daea5f0f50a7c0c3f9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmMxYzBkYWVhNWYwZjUwYTdjMGMzZjkiLCJ1c2VybmFtZSI6IlN1cGVyQWRtaW4iLCJwYXNzd29yZCI6IiQyYSQxMCRqUEpWang4a2lRMnYwR2N3VkpNU2MuZW5OY1c2Ymhkbzdnekk3TlE0dURZSTRzNzlXQk03NiIsIm5hbWUiOiJEYW5pZWwgUMOpcmV6IiwiZW1haWwiOiJkYW5pZWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjU3MDc1MTYzLCJleHAiOjE2NTcxNjE1NjN9.C6AKnImfX3eQp5XOOqH-tUZXQN4ueDQmpUSWK9SNNLk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/user/delete/62c1c0daea5f0f50a7c0c3f9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"delete",
+								"62c1c0daea5f0f50a7c0c3f9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "toInvoice",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE4MGZhMTliY2E1MDRmNThkMzgwZDUiLCJ1c2VybmFtZSI6IkRhbmllbDEiLCJwYXNzd29yZCI6IiQyYSQxMCRGVy9hQ29RTTFzLzFvaDRIWTJnS3FlNURSN3dNOFdPU1FtNlRDaFpua1gudjdyYTlYRVAuQyIsIm5hbWUiOiJEYW5pZWwiLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJkcGVyZXpAZ21haWwuY29tIiwicm9sZSI6IkFETUlOSE9URUwiLCJpYXQiOjE2NTY0NDg3MDEsImV4cCI6MTY1NjUzNTEwMX0.iXYmZ-Y1xV8qDTJ7Z9xDtUFnk-VwpTrlyKViwIOvu_Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "D",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/toInvoice/62ba3c9e3348cb9cabfe20ff",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"toInvoice",
+								"62ba3c9e3348cb9cabfe20ff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUsers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmMxYzBkYWVhNWYwZjUwYTdjMGMzZjkiLCJ1c2VybmFtZSI6IlN1cGVyQWRtaW4iLCJwYXNzd29yZCI6IiQyYSQxMCRqUEpWang4a2lRMnYwR2N3VkpNU2MuZW5OY1c2Ymhkbzdnekk3TlE0dURZSTRzNzlXQk03NiIsIm5hbWUiOiJEYW5pZWwgUMOpcmV6IiwiZW1haWwiOiJkYW5pZWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjU3MDc1MTYzLCJleHAiOjE2NTcxNjE1NjN9.C6AKnImfX3eQp5XOOqH-tUZXQN4ueDQmpUSWK9SNNLk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/user/getUsers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"getUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "searchGuest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzA4MDU4OSwiZXhwIjoxNjU3MTY2OTg5fQ.TZl3-QrwUgfgFyDQBoWD3UmWa8LCF2qqfhinmYCHfnU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "D",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/searchGuest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"searchGuest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getGuests",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzExNDcxMSwiZXhwIjoxNjU3MjAxMTExfQ.Xm_dP9GEyJrLNip-HEJMqZEnZVh6CcX29K1VFe_P6Tw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/getGuests",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"getGuests"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hotel",
+			"item": [
+				{
+					"name": "createHotel",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmMxYzBkYWVhNWYwZjUwYTdjMGMzZjkiLCJ1c2VybmFtZSI6IlN1cGVyQWRtaW4iLCJwYXNzd29yZCI6IiQyYSQxMCRqUEpWang4a2lRMnYwR2N3VkpNU2MuZW5OY1c2Ymhkbzdnekk3TlE0dURZSTRzNzlXQk03NiIsIm5hbWUiOiJFc3R1YXJkbyIsInBob25lIjoiNzg5NDU2MTIiLCJlbWFpbCI6ImRhbmllbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTcxMTc4ODIsImV4cCI6MTY1NzIwNDI4Mn0.7Co1KBHr3MKqgn1uWC6C-YXVSQ_H0koDfhglFmssqGY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "typeRooms",
+									"value": "adsf,as         df, asdf",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "priceRooms",
+									"value": "10,12,15",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "Angeles",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "12 calle 20-21 zona 5",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "hotel de lujo",
+									"type": "text"
+								},
+								{
+									"key": "administrator",
+									"value": "62a9f00c0357d9cc4c737f61",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/hotel/createHotel",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"hotel",
+								"createHotel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getHotel",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmMxYzBkYWVhNWYwZjUwYTdjMGMzZjkiLCJ1c2VybmFtZSI6IlN1cGVyQWRtaW4iLCJwYXNzd29yZCI6IiQyYSQxMCRqUEpWang4a2lRMnYwR2N3VkpNU2MuZW5OY1c2Ymhkbzdnekk3TlE0dURZSTRzNzlXQk03NiIsIm5hbWUiOiJFc3R1YXJkbyIsInBob25lIjoiNzg5NDU2MTIiLCJlbWFpbCI6ImRhbmllbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTcxMTc4ODIsImV4cCI6MTY1NzIwNDI4Mn0.7Co1KBHr3MKqgn1uWC6C-YXVSQ_H0koDfhglFmssqGY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "angeles",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/hotel/getHotel/62aa8b45a54ea644db6f1def",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"hotel",
+								"getHotel",
+								"62aa8b45a54ea644db6f1def"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getHotels",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE4MGZhMTliY2E1MDRmNThkMzgwZDUiLCJ1c2VybmFtZSI6IkRhbmllbDEiLCJwYXNzd29yZCI6IiQyYSQxMCRGVy9hQ29RTTFzLzFvaDRIWTJnS3FlNURSN3dNOFdPU1FtNlRDaFpua1gudjdyYTlYRVAuQyIsIm5hbWUiOiJEYW5pZWwiLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJkcGVyZXpAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjU1MzA0MDkwLCJleHAiOjE2NTUzOTA0OTB9.l33prp4Jgu9gfbMBeKCDzohEfSrXIoTr_x2HZEn53Es",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "angeles",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/hotel/getHotels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"hotel",
+								"getHotels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateHotel",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmMxYzBkYWVhNWYwZjUwYTdjMGMzZjkiLCJ1c2VybmFtZSI6IlN1cGVyQWRtaW4iLCJwYXNzd29yZCI6IiQyYSQxMCRqUEpWang4a2lRMnYwR2N3VkpNU2MuZW5OY1c2Ymhkbzdnekk3TlE0dURZSTRzNzlXQk03NiIsIm5hbWUiOiJFc3R1YXJkbyIsInBob25lIjoiNzg5NDU2MTIiLCJlbWFpbCI6ImRhbmllbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTcxMTc4ODIsImV4cCI6MTY1NzIwNDI4Mn0.7Co1KBHr3MKqgn1uWC6C-YXVSQ_H0koDfhglFmssqGY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Trivago",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/hotel/updateHotel/62aa8b45a54ea644db6f1def",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"hotel",
+								"updateHotel",
+								"62aa8b45a54ea644db6f1def"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteHotel",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmMxYzBkYWVhNWYwZjUwYTdjMGMzZjkiLCJ1c2VybmFtZSI6IlN1cGVyQWRtaW4iLCJwYXNzd29yZCI6IiQyYSQxMCRqUEpWang4a2lRMnYwR2N3VkpNU2MuZW5OY1c2Ymhkbzdnekk3TlE0dURZSTRzNzlXQk03NiIsIm5hbWUiOiJFc3R1YXJkbyIsInBob25lIjoiNzg5NDU2MTIiLCJlbWFpbCI6ImRhbmllbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTcxMTc4ODIsImV4cCI6MTY1NzIwNDI4Mn0.7Co1KBHr3MKqgn1uWC6C-YXVSQ_H0koDfhglFmssqGY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "angeles",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/hotel/deleteHotel/62aa9916e2518aa3a1698115",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"hotel",
+								"deleteHotel",
+								"62aa9916e2518aa3a1698115"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "searchHotelByName",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE4MGZhMTliY2E1MDRmNThkMzgwZDUiLCJ1c2VybmFtZSI6IkRhbmllbDEiLCJwYXNzd29yZCI6IiQyYSQxMCRGVy9hQ29RTTFzLzFvaDRIWTJnS3FlNURSN3dNOFdPU1FtNlRDaFpua1gudjdyYTlYRVAuQyIsIm5hbWUiOiJEYW5pZWwiLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJkcGVyZXpAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjU1MzA0MDkwLCJleHAiOjE2NTUzOTA0OTB9.l33prp4Jgu9gfbMBeKCDzohEfSrXIoTr_x2HZEn53Es",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "angeles",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/hotel/searchHotelByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"hotel",
+								"searchHotelByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "searchHotelByAddress",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE4MGZhMTliY2E1MDRmNThkMzgwZDUiLCJ1c2VybmFtZSI6IkRhbmllbDEiLCJwYXNzd29yZCI6IiQyYSQxMCRGVy9hQ29RTTFzLzFvaDRIWTJnS3FlNURSN3dNOFdPU1FtNlRDaFpua1gudjdyYTlYRVAuQyIsIm5hbWUiOiJEYW5pZWwiLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJkcGVyZXpAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjU1MzA0MDkwLCJleHAiOjE2NTUzOTA0OTB9.l33prp4Jgu9gfbMBeKCDzohEfSrXIoTr_x2HZEn53Es",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "address",
+									"value": "12 calle 20-21",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/hotel/searchHotelByAddress",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"hotel",
+								"searchHotelByAddress"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mostPopular",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE4MGZhMTliY2E1MDRmNThkMzgwZDUiLCJ1c2VybmFtZSI6IkRhbmllbDEiLCJwYXNzd29yZCI6IiQyYSQxMCRGVy9hQ29RTTFzLzFvaDRIWTJnS3FlNURSN3dNOFdPU1FtNlRDaFpua1gudjdyYTlYRVAuQyIsIm5hbWUiOiJEYW5pZWwiLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJkcGVyZXpAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjU2MjA4NTg0LCJleHAiOjE2NTYyOTQ5ODR9.vbC7W9ic9gOXjuw40Mn6R37G1Dkz3ijpjbyRiuvovy4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "angeles",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/hotel/mostPopular",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"hotel",
+								"mostPopular"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Room",
+			"item": [
+				{
+					"name": "addRoom",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmMxYzBkYWVhNWYwZjUwYTdjMGMzZjkiLCJ1c2VybmFtZSI6IlN1cGVyQWRtaW4iLCJwYXNzd29yZCI6IiQyYSQxMCRqUEpWang4a2lRMnYwR2N3VkpNU2MuZW5OY1c2Ymhkbzdnekk3TlE0dURZSTRzNzlXQk03NiIsIm5hbWUiOiJFc3R1YXJkbyIsInBob25lIjoiNzg5NDU2MTIiLCJlbWFpbCI6ImRhbmllbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTcxMTUxMDksImV4cCI6MTY1NzIwMTUwOX0.G98BzuGYGhVOnwilLI35LNhUcAEusiKQtC2XpuI7V28",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "noRoom",
+									"value": "250",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Habitación con vista al mar",
+									"type": "text"
+								},
+								{
+									"key": "services",
+									"value": "Wifi,Desayuno",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Individual",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "500",
+									"type": "text"
+								},
+								{
+									"key": "hotel",
+									"value": "62b5447406b1104c56e213a4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/room/addRoom",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"room",
+								"addRoom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getRooms",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmMxYzBkYWVhNWYwZjUwYTdjMGMzZjkiLCJ1c2VybmFtZSI6IlN1cGVyQWRtaW4iLCJwYXNzd29yZCI6IiQyYSQxMCRqUEpWang4a2lRMnYwR2N3VkpNU2MuZW5OY1c2Ymhkbzdnekk3TlE0dURZSTRzNzlXQk03NiIsIm5hbWUiOiJFc3R1YXJkbyIsInBob25lIjoiNzg5NDU2MTIiLCJlbWFpbCI6ImRhbmllbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTcxMTUxMDksImV4cCI6MTY1NzIwMTUwOX0.G98BzuGYGhVOnwilLI35LNhUcAEusiKQtC2XpuI7V28",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "angeles",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "hotel de lujo",
+									"type": "text"
+								},
+								{
+									"key": "services",
+									"value": "Wifi,Desayuno",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Individual",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "500",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/room/getRooms/62b5447406b1104c56e213a4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"room",
+								"getRooms",
+								"62b5447406b1104c56e213a4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getRoom",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmMxYzBkYWVhNWYwZjUwYTdjMGMzZjkiLCJ1c2VybmFtZSI6IlN1cGVyQWRtaW4iLCJwYXNzd29yZCI6IiQyYSQxMCRqUEpWang4a2lRMnYwR2N3VkpNU2MuZW5OY1c2Ymhkbzdnekk3TlE0dURZSTRzNzlXQk03NiIsIm5hbWUiOiJFc3R1YXJkbyIsInBob25lIjoiNzg5NDU2MTIiLCJlbWFpbCI6ImRhbmllbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTcxNjY4MjIsImV4cCI6MTY1NzI1MzIyMn0.IcRpzn5A8FCZfX7uV_ZmbIPuKjjqdhONMggzh5YTjiA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "angeles",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "hotel de lujo",
+									"type": "text"
+								},
+								{
+									"key": "services",
+									"value": "Wifi,Desayuno",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Individual",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "500",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/room/getRoom/62c5921b3b4e23972a46dda5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"room",
+								"getRoom",
+								"62c5921b3b4e23972a46dda5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "availableRooms",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzExNTkzOCwiZXhwIjoxNjU3MjAyMzM4fQ.6r4tWQpN80bBAGDIHk7r7aaIhA6m_kXxQx6MiAt65NY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/room/availableRooms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"room",
+								"availableRooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateRoom",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmMxYzBkYWVhNWYwZjUwYTdjMGMzZjkiLCJ1c2VybmFtZSI6IlN1cGVyQWRtaW4iLCJwYXNzd29yZCI6IiQyYSQxMCRqUEpWang4a2lRMnYwR2N3VkpNU2MuZW5OY1c2Ymhkbzdnekk3TlE0dURZSTRzNzlXQk03NiIsIm5hbWUiOiJFc3R1YXJkbyIsInBob25lIjoiNzg5NDU2MTIiLCJlbWFpbCI6ImRhbmllbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTcxMTUxMDksImV4cCI6MTY1NzIwMTUwOX0.G98BzuGYGhVOnwilLI35LNhUcAEusiKQtC2XpuI7V28",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "noRoom",
+									"value": "500",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": "Habitación con vista al mar",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "services",
+									"value": "Wifi, Desayuno",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Individual",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "500",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "hotel",
+									"value": "62b5447406b1104c56e213a4",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/room/updateRoom/62c5921b3b4e23972a46dda5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"room",
+								"updateRoom",
+								"62c5921b3b4e23972a46dda5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteRoom",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmMxYzBkYWVhNWYwZjUwYTdjMGMzZjkiLCJ1c2VybmFtZSI6IlN1cGVyQWRtaW4iLCJwYXNzd29yZCI6IiQyYSQxMCRqUEpWang4a2lRMnYwR2N3VkpNU2MuZW5OY1c2Ymhkbzdnekk3TlE0dURZSTRzNzlXQk03NiIsIm5hbWUiOiJFc3R1YXJkbyIsInBob25lIjoiNzg5NDU2MTIiLCJlbWFpbCI6ImRhbmllbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTcxMTUxMDksImV4cCI6MTY1NzIwMTUwOX0.G98BzuGYGhVOnwilLI35LNhUcAEusiKQtC2XpuI7V28",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/room/deleteRoom/62b535b405c75f626c9af069",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"room",
+								"deleteRoom",
+								"62b535b405c75f626c9af069"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reservation",
+			"item": [
+				{
+					"name": "makeReservation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzExNDcxMSwiZXhwIjoxNjU3MjAxMTExfQ.Xm_dP9GEyJrLNip-HEJMqZEnZVh6CcX29K1VFe_P6Tw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "startDate",
+									"value": "10/20 15:00",
+									"type": "text"
+								},
+								{
+									"key": "finishDate",
+									"value": "10/21 16:00",
+									"type": "text"
+								},
+								{
+									"key": "hotel",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "room",
+									"value": "62c5921b3b4e23972a46dda5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/reservation/makeReservation",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"reservation",
+								"makeReservation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getReservationsApproved",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzExNDcxMSwiZXhwIjoxNjU3MjAxMTExfQ.Xm_dP9GEyJrLNip-HEJMqZEnZVh6CcX29K1VFe_P6Tw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "startDate",
+									"value": "10/21 14:00",
+									"type": "text"
+								},
+								{
+									"key": "finishDate",
+									"value": "10/21 15:00",
+									"type": "text"
+								},
+								{
+									"key": "hotel",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "room",
+									"value": "62b535b405c75f626c9af069",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/reservation/getReservationsApproved",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"reservation",
+								"getReservationsApproved"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getReservationsFinished",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzExNDcxMSwiZXhwIjoxNjU3MjAxMTExfQ.Xm_dP9GEyJrLNip-HEJMqZEnZVh6CcX29K1VFe_P6Tw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "startDate",
+									"value": "10/21 14:00",
+									"type": "text"
+								},
+								{
+									"key": "finishDate",
+									"value": "10/21 15:00",
+									"type": "text"
+								},
+								{
+									"key": "hotel",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "room",
+									"value": "62b535b405c75f626c9af069",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/reservation/getReservationsFinished",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"reservation",
+								"getReservationsFinished"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getReservationsClient",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzExNDcxMSwiZXhwIjoxNjU3MjAxMTExfQ.Xm_dP9GEyJrLNip-HEJMqZEnZVh6CcX29K1VFe_P6Tw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "startDate",
+									"value": "10/21 14:00",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "finishDate",
+									"value": "10/21 15:00",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "hotel",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "room",
+									"value": "62b535b405c75f626c9af069",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/reservation/getReservationsC/62b5447406b1104c56e213a4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"reservation",
+								"getReservationsC",
+								"62b5447406b1104c56e213a4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cancelReservation",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzExNDcxMSwiZXhwIjoxNjU3MjAxMTExfQ.Xm_dP9GEyJrLNip-HEJMqZEnZVh6CcX29K1VFe_P6Tw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/reservation/cancelReservation/62c598a71f8ec0da53d95841",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"reservation",
+								"cancelReservation",
+								"62c598a71f8ec0da53d95841"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getReservation",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzExNDcxMSwiZXhwIjoxNjU3MjAxMTExfQ.Xm_dP9GEyJrLNip-HEJMqZEnZVh6CcX29K1VFe_P6Tw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "startDate",
+									"value": "10/21 14:00",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "finishDate",
+									"value": "10/21 15:00",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "hotel",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "room",
+									"value": "62b535b405c75f626c9af069",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/reservation/getReservation/62c59f6179fb2ef21b42e1ec",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"reservation",
+								"getReservation",
+								"62c59f6179fb2ef21b42e1ec"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateReservation",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzExNDcxMSwiZXhwIjoxNjU3MjAxMTExfQ.Xm_dP9GEyJrLNip-HEJMqZEnZVh6CcX29K1VFe_P6Tw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "startDate",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/reservation/updateReservation/62ba3c9e3348cb9cabfe20ff",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"reservation",
+								"updateReservation",
+								"62ba3c9e3348cb9cabfe20ff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateReservation Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzExNDcxMSwiZXhwIjoxNjU3MjAxMTExfQ.Xm_dP9GEyJrLNip-HEJMqZEnZVh6CcX29K1VFe_P6Tw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/reservation/deleteReservation/62c598a71f8ec0da53d95841",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"reservation",
+								"deleteReservation",
+								"62c598a71f8ec0da53d95841"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getReservations",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzE1NjAxMiwiZXhwIjoxNjU3MjQyNDEyfQ.X4XAxAVz0pN_5ume7Ag4BgbBGdfXFhT4vrmazkfuEtU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "startDate",
+									"value": "10/21 14:00",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "finishDate",
+									"value": "10/21 15:00",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "hotel",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "room",
+									"value": "62b535b405c75f626c9af069",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/reservation/getReservations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"reservation",
+								"getReservations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reservationsByHotel",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmMxYzBkYWVhNWYwZjUwYTdjMGMzZjkiLCJ1c2VybmFtZSI6IlN1cGVyQWRtaW4iLCJwYXNzd29yZCI6IiQyYSQxMCRqUEpWang4a2lRMnYwR2N3VkpNU2MuZW5OY1c2Ymhkbzdnekk3TlE0dURZSTRzNzlXQk03NiIsIm5hbWUiOiJFc3R1YXJkbyIsInBob25lIjoiNzg5NDU2MTIiLCJlbWFpbCI6ImRhbmllbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTcxMTc4ODIsImV4cCI6MTY1NzIwNDI4Mn0.7Co1KBHr3MKqgn1uWC6C-YXVSQ_H0koDfhglFmssqGY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "startDate",
+									"value": "10/21 14:00",
+									"type": "text"
+								},
+								{
+									"key": "finishDate",
+									"value": "10/21 15:00",
+									"type": "text"
+								},
+								{
+									"key": "hotel",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "room",
+									"value": "62b535b405c75f626c9af069",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/reservation/reservationsByHotel",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"reservation",
+								"reservationsByHotel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Event",
+			"item": [
+				{
+					"name": "createEvent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzE0NDc0OCwiZXhwIjoxNjU3MjMxMTQ4fQ.RYi8a_8I-S6oISOKzsGv75sF7zSMOy5usuCrosT9pd4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user",
+									"value": "62a9f00c0357d9cc4c737f61",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "17 años Silvia",
+									"type": "text"
+								},
+								{
+									"key": "startDate",
+									"value": "7/25",
+									"type": "text"
+								},
+								{
+									"key": "finishDate",
+									"value": "7/26",
+									"type": "text"
+								},
+								{
+									"key": "services",
+									"value": "Comida, Bocinas",
+									"type": "text"
+								},
+								{
+									"key": "prices",
+									"value": "20,30",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "16 años",
+									"type": "text"
+								},
+								{
+									"key": "cost",
+									"value": "51",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/event/createEvent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"event",
+								"createEvent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteEvent",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzEyNDY5NCwiZXhwIjoxNjU3MjExMDk0fQ.g9KKkqk39Ss2ow9MjfL_zy5l3uEn1pHLYw9rjgx2gz0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user",
+									"value": "62a80fa19bca504f58d380d5",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "15 años Diana",
+									"type": "text"
+								},
+								{
+									"key": "startDate",
+									"value": "11/30",
+									"type": "text"
+								},
+								{
+									"key": "finishDate",
+									"value": "11/31",
+									"type": "text"
+								},
+								{
+									"key": "services",
+									"value": "Comida, Bocinas",
+									"type": "text"
+								},
+								{
+									"key": "prices",
+									"value": "20,30",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "15 años",
+									"type": "text"
+								},
+								{
+									"key": "cost",
+									"value": "51",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/event/deleteEvent/62c6006e13600b79a770107a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"event",
+								"deleteEvent",
+								"62c6006e13600b79a770107a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateEvent",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzEyNDY5NCwiZXhwIjoxNjU3MjExMDk0fQ.g9KKkqk39Ss2ow9MjfL_zy5l3uEn1pHLYw9rjgx2gz0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user",
+									"value": "62a80fa19bca504f58d380d5",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "15 años Diana",
+									"type": "text"
+								},
+								{
+									"key": "startDate",
+									"value": "11/30",
+									"type": "text"
+								},
+								{
+									"key": "finishDate",
+									"value": "11/31",
+									"type": "text"
+								},
+								{
+									"key": "services",
+									"value": "Comida, Bocinas",
+									"type": "text"
+								},
+								{
+									"key": "prices",
+									"value": "20,30",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "15 años",
+									"type": "text"
+								},
+								{
+									"key": "cost",
+									"value": "51",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/event/updateEvent/62c604f089bd9130000432f4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"event",
+								"updateEvent",
+								"62c604f089bd9130000432f4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEvents",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzEyNDY5NCwiZXhwIjoxNjU3MjExMDk0fQ.g9KKkqk39Ss2ow9MjfL_zy5l3uEn1pHLYw9rjgx2gz0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/event/getEvents/62b5447406b1104c56e213a4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"event",
+								"getEvents",
+								"62b5447406b1104c56e213a4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEvent",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzE1NjAxMiwiZXhwIjoxNjU3MjQyNDEyfQ.X4XAxAVz0pN_5ume7Ag4BgbBGdfXFhT4vrmazkfuEtU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/event/getEvent/62c604f089bd9130000432f4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"event",
+								"getEvent",
+								"62c604f089bd9130000432f4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEventsApproved",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzE0NDc0OCwiZXhwIjoxNjU3MjMxMTQ4fQ.RYi8a_8I-S6oISOKzsGv75sF7zSMOy5usuCrosT9pd4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/event/getEventsApproved",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"event",
+								"getEventsApproved"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEventsFinished",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MmE5ZjAwYzAzNTdkOWNjNGM3MzdmNjEiLCJ1c2VybmFtZSI6IkRhbmllbCIsInBhc3N3b3JkIjoiJDJhJDEwJFFKRk5WM21IOENJVW45T2hreldpTi5VN04uTnVSd3pwaG5RSUlENnV2LmVBeDg2a0ovWGdHIiwibmFtZSI6IkRhbmllbCIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU5IT1RFTCIsImlhdCI6MTY1NzE0NDc0OCwiZXhwIjoxNjU3MjMxMTQ4fQ.RYi8a_8I-S6oISOKzsGv75sF7zSMOy5usuCrosT9pd4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/event/getEventsFinished",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"event",
+								"getEventsFinished"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
